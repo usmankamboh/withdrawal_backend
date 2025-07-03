@@ -1,0 +1,40 @@
+http://localhost:5000/api/auth/register
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "123456"
+}
+
+http://localhost:5000/api/auth/login
+{
+  "email": "john@example.com",
+  "password": "123456"
+}
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjUxMTdjYzRiZjMxNzgzODdlZWE2MCIsImlhdCI6MTc1MTQ1OTk1MCwiZXhwIjoxNzUxNTQ2MzUwfQ.ArH8n3XUY3fMjuX50foNqNLCMYYOWHSkJXgyqp_G8SA
+
+
+http://localhost:5000/api/requests
+{
+  "subject": "Math 101",
+  "reason": "I am changing my major"
+}
+add authorization token 
+
+GET : http://localhost:5000/api/requests/my
+add authorization token 
+
+adminlogin 
+http://localhost:5000/api/auth/login
+{
+  "email": "mariakamboh@gmail.com",
+  "password": "admin123"
+}
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjUxNjY1NzhlZmMyOTkyNWMyM2ZhYyIsImlhdCI6MTc1MTQ2MDI0MSwiZXhwIjoxNzUxNTQ2NjQxfQ.9RQ70ikrIvf4ccgiqDURyDV5Ta4vWg-5GjBgqEaHODI
+
+
+http://localhost:5000/api/requests/admin/pending
+
+
+
+
+http://localhost:5000/api/requests/admin/686512c9c4bf3178387eea65
