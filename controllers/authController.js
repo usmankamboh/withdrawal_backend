@@ -46,9 +46,9 @@ const loginUser = async (req, res) => {
     if (!isMatch) {
       return res.status(400).json({ message: 'Invalid email or password' });
     }
-
+    const JWT_SECRET = "yourSecretKeyHere";
     // Generate JWT token
-    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+    const token = jwt.sign({ id: user._id }, JWT_SECRET, {
       expiresIn: '1d',
     });
 
