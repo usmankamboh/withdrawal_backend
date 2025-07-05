@@ -12,6 +12,9 @@ app.use(express.json());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/requests', requestRoutes);
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+});
 
 // ✅ Make sure only ONE listen call is used
 const MONGO_URI = "mongodb+srv://maria:withdrawal@cluster0.f2tnj28.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
